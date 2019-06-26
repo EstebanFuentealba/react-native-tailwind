@@ -1,1589 +1,1715 @@
 // Taken from: https://github.com/taylorbryant/crna-tailwind
-var React = require('react-native')
-var { StyleSheet } = React
+var React = require("react-native");
+var { StyleSheet } = React;
 
 module.exports = StyleSheet.create({
-  'bg-transparent': {
-    backgroundColor: 'transparent'
+  "bg-transparent": {
+    backgroundColor: "transparent"
   },
-  'bg-black': {
-    backgroundColor: '#22292f'
+  "bg-black": {
+    backgroundColor: "#000"
   },
-  'bg-grey-darkest': {
-    backgroundColor: '#3d4852'
+  "bg-white": {
+    backgroundColor: "#fff"
   },
-  'bg-grey-darker': {
-    backgroundColor: '#606f7b'
+  "bg-gray-100": {
+    backgroundColor: "#f7fafc"
   },
-  'bg-grey-dark': {
-    backgroundColor: '#8795a1'
+  "bg-gray-200": {
+    backgroundColor: "#edf2f7"
   },
-  'bg-grey': {
-    backgroundColor: '#b8c2cc'
+  "bg-gray-300": {
+    backgroundColor: "#e2e8f0"
   },
-  'bg-grey-light': {
-    backgroundColor: '#dae1e7'
+  "bg-gray-400": {
+    backgroundColor: "#cbd5e0"
   },
-  'bg-grey-lighter': {
-    backgroundColor: '#f1f5f8'
+  "bg-gray-500": {
+    backgroundColor: "#a0aec0"
   },
-  'bg-grey-lightest': {
-    backgroundColor: '#f8fafc'
+  "bg-gray-600": {
+    backgroundColor: "#718096"
   },
-  'bg-white': {
-    backgroundColor: '#fff'
+  "bg-gray-700": {
+    backgroundColor: "#4a5568"
   },
-  'bg-red-darkest': {
-    backgroundColor: '#3b0d0c'
+  "bg-gray-800": {
+    backgroundColor: "#2d3748"
   },
-  'bg-red-darker': {
-    backgroundColor: '#621b18'
+  "bg-gray-900": {
+    backgroundColor: "#1a202c"
   },
-  'bg-red-dark': {
-    backgroundColor: '#cc1f1a'
+  "bg-red-100": {
+    backgroundColor: "#fff5f5"
   },
-  'bg-red': {
-    backgroundColor: '#e3342f'
+  "bg-red-200": {
+    backgroundColor: "#fed7d7"
   },
-  'bg-red-light': {
-    backgroundColor: '#ef5753'
+  "bg-red-300": {
+    backgroundColor: "#feb2b2"
   },
-  'bg-red-lighter': {
-    backgroundColor: '#f9acaa'
+  "bg-red-400": {
+    backgroundColor: "#fc8181"
   },
-  'bg-red-lightest': {
-    backgroundColor: '#fcebea'
+  "bg-red-500": {
+    backgroundColor: "#f56565"
   },
-  'bg-orange-darkest': {
-    backgroundColor: '#462a16'
+  "bg-red-600": {
+    backgroundColor: "#e53e3e"
   },
-  'bg-orange-darker': {
-    backgroundColor: '#613b1f'
+  "bg-red-700": {
+    backgroundColor: "#c53030"
   },
-  'bg-orange-dark': {
-    backgroundColor: '#de751f'
+  "bg-red-800": {
+    backgroundColor: "#9b2c2c"
   },
-  'bg-orange': {
-    backgroundColor: '#f6993f'
+  "bg-red-900": {
+    backgroundColor: "#742a2a"
   },
-  'bg-orange-light': {
-    backgroundColor: '#faad63'
+  "bg-orange-100": {
+    backgroundColor: "#fffaf0"
   },
-  'bg-orange-lighter': {
-    backgroundColor: '#fcd9b6'
+  "bg-orange-200": {
+    backgroundColor: "#feebc8"
   },
-  'bg-orange-lightest': {
-    backgroundColor: '#fff5eb'
+  "bg-orange-300": {
+    backgroundColor: "#fbd38d"
   },
-  'bg-yellow-darkest': {
-    backgroundColor: '#453411'
+  "bg-orange-400": {
+    backgroundColor: "#f6ad55"
   },
-  'bg-yellow-darker': {
-    backgroundColor: '#684f1d'
+  "bg-orange-500": {
+    backgroundColor: "#ed8936"
   },
-  'bg-yellow-dark': {
-    backgroundColor: '#f2d024'
+  "bg-orange-600": {
+    backgroundColor: "#dd6b20"
   },
-  'bg-yellow': {
-    backgroundColor: '#ffed4a'
+  "bg-orange-700": {
+    backgroundColor: "#c05621"
   },
-  'bg-yellow-light': {
-    backgroundColor: '#fff382'
+  "bg-orange-800": {
+    backgroundColor: "#9c4221"
   },
-  'bg-yellow-lighter': {
-    backgroundColor: '#fff9c2'
+  "bg-orange-900": {
+    backgroundColor: "#7b341e"
   },
-  'bg-yellow-lightest': {
-    backgroundColor: '#fcfbeb'
+  "bg-yellow-100": {
+    backgroundColor: "ivory"
   },
-  'bg-green-darkest': {
-    backgroundColor: '#0f2f21'
+  "bg-yellow-200": {
+    backgroundColor: "#fefcbf"
   },
-  'bg-green-darker': {
-    backgroundColor: '#1a4731'
+  "bg-yellow-300": {
+    backgroundColor: "#faf089"
   },
-  'bg-green-dark': {
-    backgroundColor: '#1f9d55'
+  "bg-yellow-400": {
+    backgroundColor: "#f6e05e"
   },
-  'bg-green': {
-    backgroundColor: '#38c172'
+  "bg-yellow-500": {
+    backgroundColor: "#ecc94b"
   },
-  'bg-green-light': {
-    backgroundColor: '#51d88a'
+  "bg-yellow-600": {
+    backgroundColor: "#d69e2e"
   },
-  'bg-green-lighter': {
-    backgroundColor: '#a2f5bf'
+  "bg-yellow-700": {
+    backgroundColor: "#b7791f"
   },
-  'bg-green-lightest': {
-    backgroundColor: '#e3fcec'
+  "bg-yellow-800": {
+    backgroundColor: "#975a16"
   },
-  'bg-teal-darkest': {
-    backgroundColor: '#0d3331'
+  "bg-yellow-900": {
+    backgroundColor: "#744210"
   },
-  'bg-teal-darker': {
-    backgroundColor: '#20504f'
+  "bg-green-100": {
+    backgroundColor: "#f0fff4"
   },
-  'bg-teal-dark': {
-    backgroundColor: '#38a89d'
+  "bg-green-200": {
+    backgroundColor: "#c6f6d5"
   },
-  'bg-teal': {
-    backgroundColor: '#4dc0b5'
+  "bg-green-300": {
+    backgroundColor: "#9ae6b4"
   },
-  'bg-teal-light': {
-    backgroundColor: '#64d5ca'
+  "bg-green-400": {
+    backgroundColor: "#68d391"
   },
-  'bg-teal-lighter': {
-    backgroundColor: '#a0f0ed'
+  "bg-green-500": {
+    backgroundColor: "#48bb78"
   },
-  'bg-teal-lightest': {
-    backgroundColor: '#e8fffe'
+  "bg-green-600": {
+    backgroundColor: "#38a169"
   },
-  'bg-blue-darkest': {
-    backgroundColor: '#12283a'
+  "bg-green-700": {
+    backgroundColor: "#2f855a"
   },
-  'bg-blue-darker': {
-    backgroundColor: '#1c3d5a'
+  "bg-green-800": {
+    backgroundColor: "#276749"
   },
-  'bg-blue-dark': {
-    backgroundColor: '#2779bd'
+  "bg-green-900": {
+    backgroundColor: "#22543d"
   },
-  'bg-blue': {
-    backgroundColor: '#3490dc'
+  "bg-teal-100": {
+    backgroundColor: "#e6fffa"
   },
-  'bg-blue-light': {
-    backgroundColor: '#6cb2eb'
+  "bg-teal-200": {
+    backgroundColor: "#b2f5ea"
   },
-  'bg-blue-lighter': {
-    backgroundColor: '#bcdefa'
+  "bg-teal-300": {
+    backgroundColor: "#81e6d9"
   },
-  'bg-blue-lightest': {
-    backgroundColor: '#eff8ff'
+  "bg-teal-400": {
+    backgroundColor: "#4fd1c5"
   },
-  'bg-indigo-darkest': {
-    backgroundColor: '#191e38'
+  "bg-teal-500": {
+    backgroundColor: "#38b2ac"
   },
-  'bg-indigo-darker': {
-    backgroundColor: '#2f365f'
+  "bg-teal-600": {
+    backgroundColor: "#319795"
   },
-  'bg-indigo-dark': {
-    backgroundColor: '#5661b3'
+  "bg-teal-700": {
+    backgroundColor: "#2c7a7b"
   },
-  'bg-indigo': {
-    backgroundColor: '#6574cd'
+  "bg-teal-800": {
+    backgroundColor: "#285e61"
   },
-  'bg-indigo-light': {
-    backgroundColor: '#7886d7'
+  "bg-teal-900": {
+    backgroundColor: "#234e52"
   },
-  'bg-indigo-lighter': {
-    backgroundColor: '#b2b7ff'
+  "bg-blue-100": {
+    backgroundColor: "#ebf8ff"
   },
-  'bg-indigo-lightest': {
-    backgroundColor: '#e6e8ff'
+  "bg-blue-200": {
+    backgroundColor: "#bee3f8"
   },
-  'bg-purple-darkest': {
-    backgroundColor: '#21183c'
+  "bg-blue-300": {
+    backgroundColor: "#90cdf4"
   },
-  'bg-purple-darker': {
-    backgroundColor: '#382b5f'
+  "bg-blue-400": {
+    backgroundColor: "#63b3ed"
   },
-  'bg-purple-dark': {
-    backgroundColor: '#794acf'
+  "bg-blue-500": {
+    backgroundColor: "#4299e1"
   },
-  'bg-purple': {
-    backgroundColor: '#9561e2'
+  "bg-blue-600": {
+    backgroundColor: "#3182ce"
   },
-  'bg-purple-light': {
-    backgroundColor: '#a779e9'
+  "bg-blue-700": {
+    backgroundColor: "#2b6cb0"
   },
-  'bg-purple-lighter': {
-    backgroundColor: '#d6bbfc'
+  "bg-blue-800": {
+    backgroundColor: "#2c5282"
   },
-  'bg-purple-lightest': {
-    backgroundColor: '#f3ebff'
+  "bg-blue-900": {
+    backgroundColor: "#2a4365"
   },
-  'bg-pink-darkest': {
-    backgroundColor: '#451225'
+  "bg-indigo-100": {
+    backgroundColor: "#ebf4ff"
   },
-  'bg-pink-darker': {
-    backgroundColor: '#6f213f'
+  "bg-indigo-200": {
+    backgroundColor: "#c3dafe"
   },
-  'bg-pink-dark': {
-    backgroundColor: '#eb5286'
+  "bg-indigo-300": {
+    backgroundColor: "#a3bffa"
   },
-  'bg-pink': {
-    backgroundColor: '#f66d9b'
+  "bg-indigo-400": {
+    backgroundColor: "#7f9cf5"
   },
-  'bg-pink-light': {
-    backgroundColor: '#fa7ea8'
+  "bg-indigo-500": {
+    backgroundColor: "#667eea"
   },
-  'bg-pink-lighter': {
-    backgroundColor: '#ffbbca'
+  "bg-indigo-600": {
+    backgroundColor: "#5a67d8"
   },
-  'bg-pink-lightest': {
-    backgroundColor: '#ffebef'
+  "bg-indigo-700": {
+    backgroundColor: "#4c51bf"
   },
-  'border-transparent': {
-    borderColor: 'transparent'
+  "bg-indigo-800": {
+    backgroundColor: "#434190"
   },
-  'border-black': {
-    borderColor: '#22292f'
+  "bg-indigo-900": {
+    backgroundColor: "#3c366b"
   },
-  'border-grey-darkest': {
-    borderColor: '#3d4852'
+  "bg-purple-100": {
+    backgroundColor: "#faf5ff"
   },
-  'border-grey-darker': {
-    borderColor: '#606f7b'
+  "bg-purple-200": {
+    backgroundColor: "#e9d8fd"
   },
-  'border-grey-dark': {
-    borderColor: '#8795a1'
+  "bg-purple-300": {
+    backgroundColor: "#d6bcfa"
   },
-  'border-grey': {
-    borderColor: '#b8c2cc'
+  "bg-purple-400": {
+    backgroundColor: "#b794f4"
   },
-  'border-grey-light': {
-    borderColor: '#dae1e7'
+  "bg-purple-500": {
+    backgroundColor: "#9f7aea"
   },
-  'border-grey-lighter': {
-    borderColor: '#f1f5f8'
+  "bg-purple-600": {
+    backgroundColor: "#805ad5"
   },
-  'border-grey-lightest': {
-    borderColor: '#f8fafc'
+  "bg-purple-700": {
+    backgroundColor: "#6b46c1"
   },
-  'border-white': {
-    borderColor: '#fff'
+  "bg-purple-800": {
+    backgroundColor: "#553c9a"
   },
-  'border-red-darkest': {
-    borderColor: '#3b0d0c'
+  "bg-purple-900": {
+    backgroundColor: "#44337a"
   },
-  'border-red-darker': {
-    borderColor: '#621b18'
+  "bg-pink-100": {
+    backgroundColor: "#fff5f7"
   },
-  'border-red-dark': {
-    borderColor: '#cc1f1a'
+  "bg-pink-200": {
+    backgroundColor: "#fed7e2"
   },
-  'border-red': {
-    borderColor: '#e3342f'
+  "bg-pink-300": {
+    backgroundColor: "#fbb6ce"
   },
-  'border-red-light': {
-    borderColor: '#ef5753'
+  "bg-pink-400": {
+    backgroundColor: "#f687b3"
   },
-  'border-red-lighter': {
-    borderColor: '#f9acaa'
+  "bg-pink-500": {
+    backgroundColor: "#ed64a6"
   },
-  'border-red-lightest': {
-    borderColor: '#fcebea'
+  "bg-pink-600": {
+    backgroundColor: "#d53f8c"
   },
-  'border-orange-darkest': {
-    borderColor: '#462a16'
+  "bg-pink-700": {
+    backgroundColor: "#b83280"
   },
-  'border-orange-darker': {
-    borderColor: '#613b1f'
+  "bg-pink-800": {
+    backgroundColor: "#97266d"
   },
-  'border-orange-dark': {
-    borderColor: '#de751f'
+  "bg-pink-900": {
+    backgroundColor: "#702459"
   },
-  'border-orange': {
-    borderColor: '#f6993f'
+  "border-transparent": {
+    borderColor: "transparent"
   },
-  'border-orange-light': {
-    borderColor: '#faad63'
+  "border-black": {
+    borderColor: "#000"
   },
-  'border-orange-lighter': {
-    borderColor: '#fcd9b6'
+  "border-white": {
+    borderColor: "#fff"
   },
-  'border-orange-lightest': {
-    borderColor: '#fff5eb'
+  "border-gray-100": {
+    borderColor: "#f7fafc"
   },
-  'border-yellow-darkest': {
-    borderColor: '#453411'
+  "border-gray-200": {
+    borderColor: "#edf2f7"
   },
-  'border-yellow-darker': {
-    borderColor: '#684f1d'
+  "border-gray-300": {
+    borderColor: "#e2e8f0"
   },
-  'border-yellow-dark': {
-    borderColor: '#f2d024'
+  "border-gray-400": {
+    borderColor: "#cbd5e0"
   },
-  'border-yellow': {
-    borderColor: '#ffed4a'
+  "border-gray-500": {
+    borderColor: "#a0aec0"
   },
-  'border-yellow-light': {
-    borderColor: '#fff382'
+  "border-gray-600": {
+    borderColor: "#718096"
   },
-  'border-yellow-lighter': {
-    borderColor: '#fff9c2'
+  "border-gray-700": {
+    borderColor: "#4a5568"
   },
-  'border-yellow-lightest': {
-    borderColor: '#fcfbeb'
+  "border-gray-800": {
+    borderColor: "#2d3748"
   },
-  'border-green-darkest': {
-    borderColor: '#0f2f21'
+  "border-gray-900": {
+    borderColor: "#1a202c"
   },
-  'border-green-darker': {
-    borderColor: '#1a4731'
+  "border-red-100": {
+    borderColor: "#fff5f5"
   },
-  'border-green-dark': {
-    borderColor: '#1f9d55'
+  "border-red-200": {
+    borderColor: "#fed7d7"
   },
-  'border-green': {
-    borderColor: '#38c172'
+  "border-red-300": {
+    borderColor: "#feb2b2"
   },
-  'border-green-light': {
-    borderColor: '#51d88a'
+  "border-red-400": {
+    borderColor: "#fc8181"
   },
-  'border-green-lighter': {
-    borderColor: '#a2f5bf'
+  "border-red-500": {
+    borderColor: "#f56565"
   },
-  'border-green-lightest': {
-    borderColor: '#e3fcec'
+  "border-red-600": {
+    borderColor: "#e53e3e"
   },
-  'border-teal-darkest': {
-    borderColor: '#0d3331'
+  "border-red-700": {
+    borderColor: "#c53030"
   },
-  'border-teal-darker': {
-    borderColor: '#20504f'
+  "border-red-800": {
+    borderColor: "#9b2c2c"
   },
-  'border-teal-dark': {
-    borderColor: '#38a89d'
+  "border-red-900": {
+    borderColor: "#742a2a"
   },
-  'border-teal': {
-    borderColor: '#4dc0b5'
+  "border-orange-100": {
+    borderColor: "#fffaf0"
   },
-  'border-teal-light': {
-    borderColor: '#64d5ca'
+  "border-orange-200": {
+    borderColor: "#feebc8"
   },
-  'border-teal-lighter': {
-    borderColor: '#a0f0ed'
+  "border-orange-300": {
+    borderColor: "#fbd38d"
   },
-  'border-teal-lightest': {
-    borderColor: '#e8fffe'
+  "border-orange-400": {
+    borderColor: "#f6ad55"
   },
-  'border-blue-darkest': {
-    borderColor: '#12283a'
+  "border-orange-500": {
+    borderColor: "#ed8936"
   },
-  'border-blue-darker': {
-    borderColor: '#1c3d5a'
+  "border-orange-600": {
+    borderColor: "#dd6b20"
   },
-  'border-blue-dark': {
-    borderColor: '#2779bd'
+  "border-orange-700": {
+    borderColor: "#c05621"
   },
-  'border-blue': {
-    borderColor: '#3490dc'
+  "border-orange-800": {
+    borderColor: "#9c4221"
   },
-  'border-blue-light': {
-    borderColor: '#6cb2eb'
+  "border-orange-900": {
+    borderColor: "#7b341e"
   },
-  'border-blue-lighter': {
-    borderColor: '#bcdefa'
+  "border-yellow-100": {
+    borderColor: "ivory"
   },
-  'border-blue-lightest': {
-    borderColor: '#eff8ff'
+  "border-yellow-200": {
+    borderColor: "#fefcbf"
   },
-  'border-indigo-darkest': {
-    borderColor: '#191e38'
+  "border-yellow-300": {
+    borderColor: "#faf089"
   },
-  'border-indigo-darker': {
-    borderColor: '#2f365f'
+  "border-yellow-400": {
+    borderColor: "#f6e05e"
   },
-  'border-indigo-dark': {
-    borderColor: '#5661b3'
+  "border-yellow-500": {
+    borderColor: "#ecc94b"
   },
-  'border-indigo': {
-    borderColor: '#6574cd'
+  "border-yellow-600": {
+    borderColor: "#d69e2e"
   },
-  'border-indigo-light': {
-    borderColor: '#7886d7'
+  "border-yellow-700": {
+    borderColor: "#b7791f"
   },
-  'border-indigo-lighter': {
-    borderColor: '#b2b7ff'
+  "border-yellow-800": {
+    borderColor: "#975a16"
   },
-  'border-indigo-lightest': {
-    borderColor: '#e6e8ff'
+  "border-yellow-900": {
+    borderColor: "#744210"
   },
-  'border-purple-darkest': {
-    borderColor: '#21183c'
+  "border-green-100": {
+    borderColor: "#f0fff4"
   },
-  'border-purple-darker': {
-    borderColor: '#382b5f'
+  "border-green-200": {
+    borderColor: "#c6f6d5"
   },
-  'border-purple-dark': {
-    borderColor: '#794acf'
+  "border-green-300": {
+    borderColor: "#9ae6b4"
   },
-  'border-purple': {
-    borderColor: '#9561e2'
+  "border-green-400": {
+    borderColor: "#68d391"
   },
-  'border-purple-light': {
-    borderColor: '#a779e9'
+  "border-green-500": {
+    borderColor: "#48bb78"
   },
-  'border-purple-lighter': {
-    borderColor: '#d6bbfc'
+  "border-green-600": {
+    borderColor: "#38a169"
   },
-  'border-purple-lightest': {
-    borderColor: '#f3ebff'
+  "border-green-700": {
+    borderColor: "#2f855a"
   },
-  'border-pink-darkest': {
-    borderColor: '#451225'
+  "border-green-800": {
+    borderColor: "#276749"
   },
-  'border-pink-darker': {
-    borderColor: '#6f213f'
+  "border-green-900": {
+    borderColor: "#22543d"
   },
-  'border-pink-dark': {
-    borderColor: '#eb5286'
+  "border-teal-100": {
+    borderColor: "#e6fffa"
   },
-  'border-pink': {
-    borderColor: '#f66d9b'
+  "border-teal-200": {
+    borderColor: "#b2f5ea"
   },
-  'border-pink-light': {
-    borderColor: '#fa7ea8'
+  "border-teal-300": {
+    borderColor: "#81e6d9"
   },
-  'border-pink-lighter': {
-    borderColor: '#ffbbca'
+  "border-teal-400": {
+    borderColor: "#4fd1c5"
   },
-  'border-pink-lightest': {
-    borderColor: '#ffebef'
+  "border-teal-500": {
+    borderColor: "#38b2ac"
   },
-  'rounded-none': {
+  "border-teal-600": {
+    borderColor: "#319795"
+  },
+  "border-teal-700": {
+    borderColor: "#2c7a7b"
+  },
+  "border-teal-800": {
+    borderColor: "#285e61"
+  },
+  "border-teal-900": {
+    borderColor: "#234e52"
+  },
+  "border-blue-100": {
+    borderColor: "#ebf8ff"
+  },
+  "border-blue-200": {
+    borderColor: "#bee3f8"
+  },
+  "border-blue-300": {
+    borderColor: "#90cdf4"
+  },
+  "border-blue-400": {
+    borderColor: "#63b3ed"
+  },
+  "border-blue-500": {
+    borderColor: "#4299e1"
+  },
+  "border-blue-600": {
+    borderColor: "#3182ce"
+  },
+  "border-blue-700": {
+    borderColor: "#2b6cb0"
+  },
+  "border-blue-800": {
+    borderColor: "#2c5282"
+  },
+  "border-blue-900": {
+    borderColor: "#2a4365"
+  },
+  "border-indigo-100": {
+    borderColor: "#ebf4ff"
+  },
+  "border-indigo-200": {
+    borderColor: "#c3dafe"
+  },
+  "border-indigo-300": {
+    borderColor: "#a3bffa"
+  },
+  "border-indigo-400": {
+    borderColor: "#7f9cf5"
+  },
+  "border-indigo-500": {
+    borderColor: "#667eea"
+  },
+  "border-indigo-600": {
+    borderColor: "#5a67d8"
+  },
+  "border-indigo-700": {
+    borderColor: "#4c51bf"
+  },
+  "border-indigo-800": {
+    borderColor: "#434190"
+  },
+  "border-indigo-900": {
+    borderColor: "#3c366b"
+  },
+  "border-purple-100": {
+    borderColor: "#faf5ff"
+  },
+  "border-purple-200": {
+    borderColor: "#e9d8fd"
+  },
+  "border-purple-300": {
+    borderColor: "#d6bcfa"
+  },
+  "border-purple-400": {
+    borderColor: "#b794f4"
+  },
+  "border-purple-500": {
+    borderColor: "#9f7aea"
+  },
+  "border-purple-600": {
+    borderColor: "#805ad5"
+  },
+  "border-purple-700": {
+    borderColor: "#6b46c1"
+  },
+  "border-purple-800": {
+    borderColor: "#553c9a"
+  },
+  "border-purple-900": {
+    borderColor: "#44337a"
+  },
+  "border-pink-100": {
+    borderColor: "#fff5f7"
+  },
+  "border-pink-200": {
+    borderColor: "#fed7e2"
+  },
+  "border-pink-300": {
+    borderColor: "#fbb6ce"
+  },
+  "border-pink-400": {
+    borderColor: "#f687b3"
+  },
+  "border-pink-500": {
+    borderColor: "#ed64a6"
+  },
+  "border-pink-600": {
+    borderColor: "#d53f8c"
+  },
+  "border-pink-700": {
+    borderColor: "#b83280"
+  },
+  "border-pink-800": {
+    borderColor: "#97266d"
+  },
+  "border-pink-900": {
+    borderColor: "#702459"
+  },
+  "rounded-none": {
     borderRadius: 0
   },
-  'rounded-sm': {
+  "rounded-sm": {
     borderRadius: 2
   },
   rounded: {
     borderRadius: 4
   },
-  'rounded-lg': {
+  "rounded-lg": {
     borderRadius: 8
   },
-  'rounded-full': {
+  "rounded-full": {
     borderRadius: 9999
   },
-  'rounded-t-none': {
+  "rounded-t-none": {
     borderTopLeftRadius: 0,
     borderTopRightRadius: 0
   },
-  'rounded-r-none': {
+  "rounded-r-none": {
     borderTopRightRadius: 0,
     borderBottomRightRadius: 0
   },
-  'rounded-b-none': {
+  "rounded-b-none": {
     borderBottomRightRadius: 0,
     borderBottomLeftRadius: 0
   },
-  'rounded-l-none': {
+  "rounded-l-none": {
     borderTopLeftRadius: 0,
     borderBottomLeftRadius: 0
   },
-  'rounded-t-sm': {
+  "rounded-t-sm": {
     borderTopLeftRadius: 2,
     borderTopRightRadius: 2
   },
-  'rounded-r-sm': {
+  "rounded-r-sm": {
     borderTopRightRadius: 2,
     borderBottomRightRadius: 2
   },
-  'rounded-b-sm': {
+  "rounded-b-sm": {
     borderBottomRightRadius: 2,
     borderBottomLeftRadius: 2
   },
-  'rounded-l-sm': {
+  "rounded-l-sm": {
     borderTopLeftRadius: 2,
     borderBottomLeftRadius: 2
   },
-  'rounded-t': {
+  "rounded-t": {
     borderTopLeftRadius: 4,
     borderTopRightRadius: 4
   },
-  'rounded-r': {
+  "rounded-r": {
     borderTopRightRadius: 4,
     borderBottomRightRadius: 4
   },
-  'rounded-b': {
+  "rounded-b": {
     borderBottomRightRadius: 4,
     borderBottomLeftRadius: 4
   },
-  'rounded-l': {
+  "rounded-l": {
     borderTopLeftRadius: 4,
     borderBottomLeftRadius: 4
   },
-  'rounded-t-lg': {
+  "rounded-t-lg": {
     borderTopLeftRadius: 8,
     borderTopRightRadius: 8
   },
-  'rounded-r-lg': {
+  "rounded-r-lg": {
     borderTopRightRadius: 8,
     borderBottomRightRadius: 8
   },
-  'rounded-b-lg': {
+  "rounded-b-lg": {
     borderBottomRightRadius: 8,
     borderBottomLeftRadius: 8
   },
-  'rounded-l-lg': {
+  "rounded-l-lg": {
     borderTopLeftRadius: 8,
     borderBottomLeftRadius: 8
   },
-  'rounded-t-full': {
+  "rounded-t-full": {
     borderTopLeftRadius: 9999,
     borderTopRightRadius: 9999
   },
-  'rounded-r-full': {
+  "rounded-r-full": {
     borderTopRightRadius: 9999,
     borderBottomRightRadius: 9999
   },
-  'rounded-b-full': {
+  "rounded-b-full": {
     borderBottomRightRadius: 9999,
     borderBottomLeftRadius: 9999
   },
-  'rounded-l-full': {
+  "rounded-l-full": {
     borderTopLeftRadius: 9999,
     borderBottomLeftRadius: 9999
   },
-  'rounded-tl-none': {
+  "rounded-tl-none": {
     borderTopLeftRadius: 0
   },
-  'rounded-tr-none': {
+  "rounded-tr-none": {
     borderTopRightRadius: 0
   },
-  'rounded-br-none': {
+  "rounded-br-none": {
     borderBottomRightRadius: 0
   },
-  'rounded-bl-none': {
+  "rounded-bl-none": {
     borderBottomLeftRadius: 0
   },
-  'rounded-tl-sm': {
+  "rounded-tl-sm": {
     borderTopLeftRadius: 2
   },
-  'rounded-tr-sm': {
+  "rounded-tr-sm": {
     borderTopRightRadius: 2
   },
-  'rounded-br-sm': {
+  "rounded-br-sm": {
     borderBottomRightRadius: 2
   },
-  'rounded-bl-sm': {
+  "rounded-bl-sm": {
     borderBottomLeftRadius: 2
   },
-  'rounded-tl': {
+  "rounded-tl": {
     borderTopLeftRadius: 4
   },
-  'rounded-tr': {
+  "rounded-tr": {
     borderTopRightRadius: 4
   },
-  'rounded-br': {
+  "rounded-br": {
     borderBottomRightRadius: 4
   },
-  'rounded-bl': {
+  "rounded-bl": {
     borderBottomLeftRadius: 4
   },
-  'rounded-tl-lg': {
+  "rounded-tl-lg": {
     borderTopLeftRadius: 8
   },
-  'rounded-tr-lg': {
+  "rounded-tr-lg": {
     borderTopRightRadius: 8
   },
-  'rounded-br-lg': {
+  "rounded-br-lg": {
     borderBottomRightRadius: 8
   },
-  'rounded-bl-lg': {
+  "rounded-bl-lg": {
     borderBottomLeftRadius: 8
   },
-  'rounded-tl-full': {
+  "rounded-tl-full": {
     borderTopLeftRadius: 9999
   },
-  'rounded-tr-full': {
+  "rounded-tr-full": {
     borderTopRightRadius: 9999
   },
-  'rounded-br-full': {
+  "rounded-br-full": {
     borderBottomRightRadius: 9999
   },
-  'rounded-bl-full': {
+  "rounded-bl-full": {
     borderBottomLeftRadius: 9999
   },
-  'border-solid': {
-    borderStyle: 'solid'
+  "border-solid": {
+    borderStyle: "solid"
   },
-  'border-dashed': {
-    borderStyle: 'dashed'
+  "border-dashed": {
+    borderStyle: "dashed"
   },
-  'border-dotted': {
-    borderStyle: 'dotted'
+  "border-dotted": {
+    borderStyle: "dotted"
   },
-  'border-0': {
+  "border-0": {
     borderWidth: 0
   },
-  'border-2': {
+  "border-2": {
     borderWidth: 2
   },
-  'border-4': {
+  "border-4": {
     borderWidth: 4
   },
-  'border-8': {
+  "border-8": {
     borderWidth: 8
   },
   border: {
     borderWidth: 1
   },
-  'border-t-0': {
+  "border-t-0": {
     borderTopWidth: 0
   },
-  'border-r-0': {
+  "border-r-0": {
     borderRightWidth: 0
   },
-  'border-b-0': {
+  "border-b-0": {
     borderBottomWidth: 0
   },
-  'border-l-0': {
+  "border-l-0": {
     borderLeftWidth: 0
   },
-  'border-t-2': {
+  "border-t-2": {
     borderTopWidth: 2
   },
-  'border-r-2': {
+  "border-r-2": {
     borderRightWidth: 2
   },
-  'border-b-2': {
+  "border-b-2": {
     borderBottomWidth: 2
   },
-  'border-l-2': {
+  "border-l-2": {
     borderLeftWidth: 2
   },
-  'border-t-4': {
+  "border-t-4": {
     borderTopWidth: 4
   },
-  'border-r-4': {
+  "border-r-4": {
     borderRightWidth: 4
   },
-  'border-b-4': {
+  "border-b-4": {
     borderBottomWidth: 4
   },
-  'border-l-4': {
+  "border-l-4": {
     borderLeftWidth: 4
   },
-  'border-t-8': {
+  "border-t-8": {
     borderTopWidth: 8
   },
-  'border-r-8': {
+  "border-r-8": {
     borderRightWidth: 8
   },
-  'border-b-8': {
+  "border-b-8": {
     borderBottomWidth: 8
   },
-  'border-l-8': {
+  "border-l-8": {
     borderLeftWidth: 8
   },
-  'border-t': {
+  "border-t": {
     borderTopWidth: 1
   },
-  'border-r': {
+  "border-r": {
     borderRightWidth: 1
   },
-  'border-b': {
+  "border-b": {
     borderBottomWidth: 1
   },
-  'border-l': {
+  "border-l": {
     borderLeftWidth: 1
   },
   hidden: {
-    display: 'none'
+    display: "none"
   },
   flex: {
-    display: 'flex'
+    display: "flex"
   },
-  'flex-row': {
-    flexDirection: 'row'
+  "flex-row": {
+    flexDirection: "row"
   },
-  'flex-row-reverse': {
-    flexDirection: 'row-reverse'
+  "flex-row-reverse": {
+    flexDirection: "row-reverse"
   },
-  'flex-col': {
-    flexDirection: 'column'
+  "flex-col": {
+    flexDirection: "column"
   },
-  'flex-col-reverse': {
-    flexDirection: 'column-reverse'
+  "flex-col-reverse": {
+    flexDirection: "column-reverse"
   },
-  'flex-wrap': {
-    flexWrap: 'wrap'
+  "flex-wrap": {
+    flexWrap: "wrap"
   },
-  'flex-no-wrap': {
-    flexWrap: 'nowrap'
+  "flex-no-wrap": {
+    flexWrap: "nowrap"
   },
-  'items-start': {
-    alignItems: 'flex-start'
+  "items-start": {
+    alignItems: "flex-start"
   },
-  'items-end': {
-    alignItems: 'flex-end'
+  "items-end": {
+    alignItems: "flex-end"
   },
-  'items-center': {
-    alignItems: 'center'
+  "items-center": {
+    alignItems: "center"
   },
-  'items-baseline': {
-    alignItems: 'baseline'
+  "items-baseline": {
+    alignItems: "baseline"
   },
-  'items-stretch': {
-    alignItems: 'stretch'
+  "items-stretch": {
+    alignItems: "stretch"
   },
-  'self-auto': {
-    alignSelf: 'auto'
+  "self-auto": {
+    alignSelf: "auto"
   },
-  'self-start': {
-    alignSelf: 'flex-start'
+  "self-start": {
+    alignSelf: "flex-start"
   },
-  'self-end': {
-    alignSelf: 'flex-end'
+  "self-end": {
+    alignSelf: "flex-end"
   },
-  'self-center': {
-    alignSelf: 'center'
+  "self-center": {
+    alignSelf: "center"
   },
-  'self-stretch': {
-    alignSelf: 'stretch'
+  "self-stretch": {
+    alignSelf: "stretch"
   },
-  'justify-start': {
-    justifyContent: 'flex-start'
+  "justify-start": {
+    justifyContent: "flex-start"
   },
-  'justify-end': {
-    justifyContent: 'flex-end'
+  "justify-end": {
+    justifyContent: "flex-end"
   },
-  'justify-center': {
-    justifyContent: 'center'
+  "justify-center": {
+    justifyContent: "center"
   },
-  'justify-between': {
-    justifyContent: 'space-between'
+  "justify-between": {
+    justifyContent: "space-between"
   },
-  'justify-around': {
-    justifyContent: 'space-around'
+  "justify-around": {
+    justifyContent: "space-around"
   },
-  'content-center': {
-    alignContent: 'center'
+  "content-center": {
+    alignContent: "center"
   },
-  'content-start': {
-    alignContent: 'flex-start'
+  "content-start": {
+    alignContent: "flex-start"
   },
-  'content-end': {
-    alignContent: 'flex-end'
+  "content-end": {
+    alignContent: "flex-end"
   },
-  'content-between': {
-    alignContent: 'space-between'
+  "content-between": {
+    alignContent: "space-between"
   },
-  'content-around': {
-    alignContent: 'space-around'
+  "content-around": {
+    alignContent: "space-around"
   },
-  'flex-1': {
+  "flex-1": {
     flex: 1
   },
-  'font-sans': {
-    fontFamily: 'system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif'
+  "font-sans": {
+    fontFamily:
+      "system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif"
   },
-  'font-serif': {
-    fontFamily: 'Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif'
+  "font-serif": {
+    fontFamily:
+      "Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif"
   },
-  'font-mono': {
-    fontFamily: 'Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace'
+  "font-mono": {
+    fontFamily:
+      "Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace"
   },
-  'font-hairline': {
-    fontWeight: '100'
+  "font-hairline": {
+    fontWeight: "100"
   },
-  'font-thin': {
-    fontWeight: '200'
+  "font-thin": {
+    fontWeight: "200"
   },
-  'font-light': {
-    fontWeight: '300'
+  "font-light": {
+    fontWeight: "300"
   },
-  'font-normal': {
-    fontWeight: '400'
+  "font-normal": {
+    fontWeight: "400"
   },
-  'font-medium': {
-    fontWeight: '500'
+  "font-medium": {
+    fontWeight: "500"
   },
-  'font-semibold': {
-    fontWeight: '600'
+  "font-semibold": {
+    fontWeight: "600"
   },
-  'font-bold': {
-    fontWeight: '700'
+  "font-bold": {
+    fontWeight: "700"
   },
-  'font-extrabold': {
-    fontWeight: '800'
+  "font-extrabold": {
+    fontWeight: "800"
   },
-  'font-black': {
-    fontWeight: '900'
+  "font-black": {
+    fontWeight: "900"
   },
-  'h-1': {
+  "h-0": {
+    height: 0
+  },
+  "h-1": {
     height: 4
   },
-  'h-2': {
+  "h-2": {
     height: 8
   },
-  'h-3': {
+  "h-3": {
     height: 12
   },
-  'h-4': {
+  "h-4": {
     height: 16
   },
-  'h-6': {
+  "h-6": {
     height: 24
   },
-  'h-8': {
+  "h-8": {
     height: 32
   },
-  'h-10': {
+  "h-10": {
     height: 40
   },
-  'h-12': {
+  "h-12": {
     height: 48
   },
-  'h-16': {
+  "h-16": {
     height: 64
   },
-  'h-24': {
+  "h-24": {
     height: 96
   },
-  'h-32': {
+  "h-32": {
     height: 128
   },
-  'h-48': {
+  "h-48": {
     height: 192
   },
-  'h-64': {
+  "h-64": {
     height: 256
   },
-  'h-auto': {
-    height: 'auto'
+  "h-auto": {
+    height: "auto"
   },
-  'h-px': {
+  "h-px": {
     height: 1
   },
-  'h-full': {
-    height: '100%'
+  "h-full": {
+    height: "100%"
   },
-  'leading-none': {
+  "leading-none": {
     lineHeight: 1
   },
-  'leading-tight': {
+  "leading-tight": {
     lineHeight: 1
   },
-  'leading-normal': {
+  "leading-normal": {
     lineHeight: 1
   },
-  'leading-loose': {
+  "leading-loose": {
     lineHeight: 2
   },
-  'm-0': {
+  "m-0": {
     marginTop: 0,
     marginBottom: 0,
     marginRight: 0,
     marginLeft: 0
   },
-  'm-1': {
+  "m-1": {
     marginTop: 4,
     marginBottom: 4,
     marginRight: 4,
     marginLeft: 4
   },
-  'm-2': {
+  "m-2": {
     marginTop: 8,
     marginBottom: 8,
     marginRight: 8,
     marginLeft: 8
   },
-  'm-3': {
+  "m-3": {
     marginTop: 12,
     marginBottom: 12,
     marginRight: 12,
     marginLeft: 12
   },
-  'm-4': {
+  "m-4": {
     marginTop: 16,
     marginBottom: 16,
     marginRight: 16,
     marginLeft: 16
   },
-  'm-6': {
+  "m-6": {
     marginTop: 24,
     marginBottom: 24,
     marginRight: 24,
     marginLeft: 24
   },
-  'm-8': {
+  "m-8": {
     marginTop: 32,
     marginBottom: 32,
     marginRight: 32,
     marginLeft: 32
   },
-  'm-auto': {
-    marginTop: 'auto',
-    marginBottom: 'auto',
-    marginRight: 'auto',
-    marginLeft: 'auto'
+  "m-auto": {
+    marginTop: "auto",
+    marginBottom: "auto",
+    marginRight: "auto",
+    marginLeft: "auto"
   },
-  'm-px': {
+  "m-px": {
     marginTop: 1,
     marginBottom: 1,
     marginRight: 1,
     marginLeft: 1
   },
-  'my-0': {
+  "my-0": {
     marginTop: 0,
     marginBottom: 0
   },
-  'mx-0': {
+  "mx-0": {
     marginLeft: 0,
     marginRight: 0
   },
-  'my-1': {
+  "my-1": {
     marginTop: 4,
     marginBottom: 4
   },
-  'mx-1': {
+  "mx-1": {
     marginLeft: 4,
     marginRight: 4
   },
-  'my-2': {
+  "my-2": {
     marginTop: 8,
     marginBottom: 8
   },
-  'mx-2': {
+  "mx-2": {
     marginLeft: 8,
     marginRight: 8
   },
-  'my-3': {
+  "my-3": {
     marginTop: 12,
     marginBottom: 12
   },
-  'mx-3': {
+  "mx-3": {
     marginLeft: 12,
     marginRight: 12
   },
-  'my-4': {
+  "my-4": {
     marginTop: 16,
     marginBottom: 16
   },
-  'mx-4': {
+  "mx-4": {
     marginLeft: 16,
     marginRight: 16
   },
-  'my-6': {
+  "my-6": {
     marginTop: 24,
     marginBottom: 24
   },
-  'mx-6': {
+  "mx-6": {
     marginLeft: 24,
     marginRight: 24
   },
-  'my-8': {
+  "my-8": {
     marginTop: 32,
     marginBottom: 32
   },
-  'mx-8': {
+  "mx-8": {
     marginLeft: 32,
     marginRight: 32
   },
-  'my-auto': {
-    marginTop: 'auto',
-    marginBottom: 'auto'
+  "my-auto": {
+    marginTop: "auto",
+    marginBottom: "auto"
   },
-  'mx-auto': {
-    marginLeft: 'auto',
-    marginRight: 'auto'
+  "mx-auto": {
+    marginLeft: "auto",
+    marginRight: "auto"
   },
-  'my-px': {
+  "my-px": {
     marginTop: 1,
     marginBottom: 1
   },
-  'mx-px': {
+  "mx-px": {
     marginLeft: 1,
     marginRight: 1
   },
-  'mt-0': {
+  "mt-0": {
     marginTop: 0
   },
-  'mr-0': {
+  "mr-0": {
     marginRight: 0
   },
-  'mb-0': {
+  "mb-0": {
     marginBottom: 0
   },
-  'ml-0': {
+  "ml-0": {
     marginLeft: 0
   },
-  'mt-1': {
+  "mt-1": {
     marginTop: 4
   },
-  'mr-1': {
+  "mr-1": {
     marginRight: 4
   },
-  'mb-1': {
+  "mb-1": {
     marginBottom: 4
   },
-  'ml-1': {
+  "ml-1": {
     marginLeft: 4
   },
-  'mt-2': {
+  "mt-2": {
     marginTop: 8
   },
-  'mr-2': {
+  "mr-2": {
     marginRight: 8
   },
-  'mb-2': {
+  "mb-2": {
     marginBottom: 8
   },
-  'ml-2': {
+  "ml-2": {
     marginLeft: 8
   },
-  'mt-3': {
+  "mt-3": {
     marginTop: 12
   },
-  'mr-3': {
+  "mr-3": {
     marginRight: 12
   },
-  'mb-3': {
+  "mb-3": {
     marginBottom: 12
   },
-  'ml-3': {
+  "ml-3": {
     marginLeft: 12
   },
-  'mt-4': {
+  "mt-4": {
     marginTop: 16
   },
-  'mr-4': {
+  "mr-4": {
     marginRight: 16
   },
-  'mb-4': {
+  "mb-4": {
     marginBottom: 16
   },
-  'ml-4': {
+  "ml-4": {
     marginLeft: 16
   },
-  'mt-6': {
+  "mt-6": {
     marginTop: 24
   },
-  'mr-6': {
+  "mr-6": {
     marginRight: 24
   },
-  'mb-6': {
+  "mb-6": {
     marginBottom: 24
   },
-  'ml-6': {
+  "ml-6": {
     marginLeft: 24
   },
-  'mt-8': {
+  "mt-8": {
     marginTop: 32
   },
-  'mr-8': {
+  "mr-8": {
     marginRight: 32
   },
-  'mb-8': {
+  "mb-8": {
     marginBottom: 32
   },
-  'ml-8': {
+  "ml-8": {
     marginLeft: 32
   },
-  'mt-auto': {
-    marginTop: 'auto'
+  "mt-auto": {
+    marginTop: "auto"
   },
-  'mr-auto': {
-    marginRight: 'auto'
+  "mr-auto": {
+    marginRight: "auto"
   },
-  'mb-auto': {
-    marginBottom: 'auto'
+  "mb-auto": {
+    marginBottom: "auto"
   },
-  'ml-auto': {
-    marginLeft: 'auto'
+  "ml-auto": {
+    marginLeft: "auto"
   },
-  'mt-px': {
+  "mt-px": {
     marginTop: 1
   },
-  'mr-px': {
+  "mr-px": {
     marginRight: 1
   },
-  'mb-px': {
+  "mb-px": {
     marginBottom: 1
   },
-  'ml-px': {
+  "ml-px": {
     marginLeft: 1
   },
-  'max-h-full': {
-    maxHeight: '100%'
+  "max-h-full": {
+    maxHeight: "100%"
   },
-  'max-w-xs': {
+  "max-w-xs": {
     maxWidth: 320
   },
-  'max-w-sm': {
+  "max-w-sm": {
     maxWidth: 480
   },
-  'max-w-md': {
+  "max-w-md": {
     maxWidth: 640
   },
-  'max-w-lg': {
+  "max-w-lg": {
     maxWidth: 800
   },
-  'max-w-xl': {
+  "max-w-xl": {
     maxWidth: 960
   },
-  'max-w-2xl': {
+  "max-w-2xl": {
     maxWidth: 1120
   },
-  'max-w-3xl': {
+  "max-w-3xl": {
     maxWidth: 1280
   },
-  'max-w-4xl': {
+  "max-w-4xl": {
     maxWidth: 1440
   },
-  'max-w-5xl': {
+  "max-w-5xl": {
     maxWidth: 1600
   },
-  'max-w-full': {
-    maxWidth: '100%'
+  "max-w-full": {
+    maxWidth: "100%"
   },
-  'min-h-0': {
+  "min-h-0": {
     minHeight: 0
   },
-  'min-h-full': {
-    minHeight: '100%'
+  "min-h-full": {
+    minHeight: "100%"
   },
-  'min-w-0': {
+  "min-w-0": {
     minWidth: 0
   },
-  'min-w-full': {
-    minWidth: '100%'
+  "min-w-full": {
+    minWidth: "100%"
   },
-  '-m-0': {
+  "-m-0": {
     marginTop: 0,
     marginBottom: 0,
     marginRight: 0,
     marginLeft: 0
   },
-  '-m-1': {
+  "-m-1": {
     marginTop: -4,
     marginBottom: -4,
     marginRight: -4,
     marginLeft: -4
   },
-  '-m-2': {
+  "-m-2": {
     marginTop: -8,
     marginBottom: -8,
     marginRight: -8,
     marginLeft: -8
   },
-  '-m-3': {
+  "-m-3": {
     marginTop: -12,
     marginBottom: -12,
     marginRight: -12,
     marginLeft: -12
   },
-  '-m-4': {
+  "-m-4": {
     marginTop: -16,
     marginBottom: -16,
     marginRight: -16,
     marginLeft: -16
   },
-  '-m-6': {
+  "-m-6": {
     marginTop: -24,
     marginBottom: -24,
     marginRight: -24,
     marginLeft: -24
   },
-  '-m-8': {
+  "-m-8": {
     marginTop: -32,
     marginBottom: -32,
     marginRight: -32,
     marginLeft: -32
   },
-  '-m-px': {
+  "-m-px": {
     marginTop: -1,
     marginBottom: -1,
     marginRight: -1,
     marginLeft: -1
   },
-  '-my-0': {
+  "-my-0": {
     marginTop: 0,
     marginBottom: 0
   },
-  '-mx-0': {
+  "-mx-0": {
     marginLeft: 0,
     marginRight: 0
   },
-  '-my-1': {
+  "-my-1": {
     marginTop: -4,
     marginBottom: -4
   },
-  '-mx-1': {
+  "-mx-1": {
     marginLeft: -4,
     marginRight: -4
   },
-  '-my-2': {
+  "-my-2": {
     marginTop: -8,
     marginBottom: -8
   },
-  '-mx-2': {
+  "-mx-2": {
     marginLeft: -8,
     marginRight: -8
   },
-  '-my-3': {
+  "-my-3": {
     marginTop: -12,
     marginBottom: -12
   },
-  '-mx-3': {
+  "-mx-3": {
     marginLeft: -12,
     marginRight: -12
   },
-  '-my-4': {
+  "-my-4": {
     marginTop: -16,
     marginBottom: -16
   },
-  '-mx-4': {
+  "-mx-4": {
     marginLeft: -16,
     marginRight: -16
   },
-  '-my-6': {
+  "-my-6": {
     marginTop: -24,
     marginBottom: -24
   },
-  '-mx-6': {
+  "-mx-6": {
     marginLeft: -24,
     marginRight: -24
   },
-  '-my-8': {
+  "-my-8": {
     marginTop: -32,
     marginBottom: -32
   },
-  '-mx-8': {
+  "-mx-8": {
     marginLeft: -32,
     marginRight: -32
   },
-  '-my-px': {
+  "-my-px": {
     marginTop: -1,
     marginBottom: -1
   },
-  '-mx-px': {
+  "-mx-px": {
     marginLeft: -1,
     marginRight: -1
   },
-  '-mt-0': {
+  "-mt-0": {
     marginTop: 0
   },
-  '-mr-0': {
+  "-mr-0": {
     marginRight: 0
   },
-  '-mb-0': {
+  "-mb-0": {
     marginBottom: 0
   },
-  '-ml-0': {
+  "-ml-0": {
     marginLeft: 0
   },
-  '-mt-1': {
+  "-mt-1": {
     marginTop: -4
   },
-  '-mr-1': {
+  "-mr-1": {
     marginRight: -4
   },
-  '-mb-1': {
+  "-mb-1": {
     marginBottom: -4
   },
-  '-ml-1': {
+  "-ml-1": {
     marginLeft: -4
   },
-  '-mt-2': {
+  "-mt-2": {
     marginTop: -8
   },
-  '-mr-2': {
+  "-mr-2": {
     marginRight: -8
   },
-  '-mb-2': {
+  "-mb-2": {
     marginBottom: -8
   },
-  '-ml-2': {
+  "-ml-2": {
     marginLeft: -8
   },
-  '-mt-3': {
+  "-mt-3": {
     marginTop: -12
   },
-  '-mr-3': {
+  "-mr-3": {
     marginRight: -12
   },
-  '-mb-3': {
+  "-mb-3": {
     marginBottom: -12
   },
-  '-ml-3': {
+  "-ml-3": {
     marginLeft: -12
   },
-  '-mt-4': {
+  "-mt-4": {
     marginTop: -16
   },
-  '-mr-4': {
+  "-mr-4": {
     marginRight: -16
   },
-  '-mb-4': {
+  "-mb-4": {
     marginBottom: -16
   },
-  '-ml-4': {
+  "-ml-4": {
     marginLeft: -16
   },
-  '-mt-6': {
+  "-mt-6": {
     marginTop: -24
   },
-  '-mr-6': {
+  "-mr-6": {
     marginRight: -24
   },
-  '-mb-6': {
+  "-mb-6": {
     marginBottom: -24
   },
-  '-ml-6': {
+  "-ml-6": {
     marginLeft: -24
   },
-  '-mt-8': {
+  "-mt-8": {
     marginTop: -32
   },
-  '-mr-8': {
+  "-mr-8": {
     marginRight: -32
   },
-  '-mb-8': {
+  "-mb-8": {
     marginBottom: -32
   },
-  '-ml-8': {
+  "-ml-8": {
     marginLeft: -32
   },
-  '-mt-px': {
+  "-mt-px": {
     marginTop: -1
   },
-  '-mr-px': {
+  "-mr-px": {
     marginRight: -1
   },
-  '-mb-px': {
+  "-mb-px": {
     marginBottom: -1
   },
-  '-ml-px': {
+  "-ml-px": {
     marginLeft: -1
   },
-  'opacity-0': {
+  "opacity-0": {
     opacity: 0
   },
-  'opacity-25': {
+  "opacity-25": {
     opacity: 0.25
   },
-  'opacity-50': {
+  "opacity-50": {
     opacity: 0.5
   },
-  'opacity-75': {
+  "opacity-75": {
     opacity: 0.75
   },
-  'opacity-100': {
+  "opacity-100": {
     opacity: 1
   },
-  'p-0': {
+  "p-0": {
     paddingTop: 0,
     paddingBottom: 0,
     paddingRight: 0,
     paddingLeft: 0
   },
-  'p-1': {
+  "p-1": {
     paddingTop: 4,
     paddingBottom: 4,
     paddingRight: 4,
     paddingLeft: 4
   },
-  'p-2': {
+  "p-2": {
     paddingTop: 8,
     paddingBottom: 8,
     paddingRight: 8,
     paddingLeft: 8
   },
-  'p-3': {
+  "p-3": {
     paddingTop: 12,
     paddingBottom: 12,
     paddingRight: 12,
     paddingLeft: 12
   },
-  'p-4': {
+  "p-4": {
     paddingTop: 16,
     paddingBottom: 16,
     paddingRight: 16,
     paddingLeft: 16
   },
-  'p-6': {
+  "p-6": {
     paddingTop: 24,
     paddingBottom: 24,
     paddingRight: 24,
     paddingLeft: 24
   },
-  'p-8': {
+  "p-8": {
     paddingTop: 32,
     paddingBottom: 32,
     paddingRight: 32,
     paddingLeft: 32
   },
-  'p-px': {
+  "p-px": {
     paddingTop: 1,
     paddingBottom: 1,
     paddingRight: 1,
     paddingLeft: 1
   },
-  'py-0': {
+  "py-0": {
     paddingTop: 0,
     paddingBottom: 0
   },
-  'px-0': {
+  "px-0": {
     paddingLeft: 0,
     paddingRight: 0
   },
-  'py-1': {
+  "py-1": {
     paddingTop: 4,
     paddingBottom: 4
   },
-  'px-1': {
+  "px-1": {
     paddingLeft: 4,
     paddingRight: 4
   },
-  'py-2': {
+  "py-2": {
     paddingTop: 8,
     paddingBottom: 8
   },
-  'px-2': {
+  "px-2": {
     paddingLeft: 8,
     paddingRight: 8
   },
-  'py-3': {
+  "py-3": {
     paddingTop: 12,
     paddingBottom: 12
   },
-  'px-3': {
+  "px-3": {
     paddingLeft: 12,
     paddingRight: 12
   },
-  'py-4': {
+  "py-4": {
     paddingTop: 16,
     paddingBottom: 16
   },
-  'px-4': {
+  "px-4": {
     paddingLeft: 16,
     paddingRight: 16
   },
-  'py-6': {
+  "py-6": {
     paddingTop: 24,
     paddingBottom: 24
   },
-  'px-6': {
+  "px-6": {
     paddingLeft: 24,
     paddingRight: 24
   },
-  'py-8': {
+  "py-8": {
     paddingTop: 32,
     paddingBottom: 32
   },
-  'px-8': {
+  "px-8": {
     paddingLeft: 32,
     paddingRight: 32
   },
-  'py-px': {
+  "py-px": {
     paddingTop: 1,
     paddingBottom: 1
   },
-  'px-px': {
+  "px-px": {
     paddingLeft: 1,
     paddingRight: 1
   },
-  'pt-0': {
+  "pt-0": {
     paddingTop: 0
   },
-  'pr-0': {
+  "pr-0": {
     paddingRight: 0
   },
-  'pb-0': {
+  "pb-0": {
     paddingBottom: 0
   },
-  'pl-0': {
+  "pl-0": {
     paddingLeft: 0
   },
-  'pt-1': {
+  "pt-1": {
     paddingTop: 4
   },
-  'pr-1': {
+  "pr-1": {
     paddingRight: 4
   },
-  'pb-1': {
+  "pb-1": {
     paddingBottom: 4
   },
-  'pl-1': {
+  "pl-1": {
     paddingLeft: 4
   },
-  'pt-2': {
+  "pt-2": {
     paddingTop: 8
   },
-  'pr-2': {
+  "pr-2": {
     paddingRight: 8
   },
-  'pb-2': {
+  "pb-2": {
     paddingBottom: 8
   },
-  'pl-2': {
+  "pl-2": {
     paddingLeft: 8
   },
-  'pt-3': {
+  "pt-3": {
     paddingTop: 12
   },
-  'pr-3': {
+  "pr-3": {
     paddingRight: 12
   },
-  'pb-3': {
+  "pb-3": {
     paddingBottom: 12
   },
-  'pl-3': {
+  "pl-3": {
     paddingLeft: 12
   },
-  'pt-4': {
+  "pt-4": {
     paddingTop: 16
   },
-  'pr-4': {
+  "pr-4": {
     paddingRight: 16
   },
-  'pb-4': {
+  "pb-4": {
     paddingBottom: 16
   },
-  'pl-4': {
+  "pl-4": {
     paddingLeft: 16
   },
-  'pt-6': {
+  "pt-6": {
     paddingTop: 24
   },
-  'pr-6': {
+  "pr-6": {
     paddingRight: 24
   },
-  'pb-6': {
+  "pb-6": {
     paddingBottom: 24
   },
-  'pl-6': {
+  "pl-6": {
     paddingLeft: 24
   },
-  'pt-8': {
+  "pt-8": {
     paddingTop: 32
   },
-  'pr-8': {
+  "pr-8": {
     paddingRight: 32
   },
-  'pb-8': {
+  "pb-8": {
     paddingBottom: 32
   },
-  'pl-8': {
+  "pl-8": {
     paddingLeft: 32
   },
-  'pt-px': {
+  "pt-px": {
     paddingTop: 1
   },
-  'pr-px': {
+  "pr-px": {
     paddingRight: 1
   },
-  'pb-px': {
+  "pb-px": {
     paddingBottom: 1
   },
-  'pl-px': {
+  "pl-px": {
     paddingLeft: 1
   },
   absolute: {
-    position: 'absolute'
+    position: "absolute"
   },
   relative: {
-    position: 'relative'
+    position: "relative"
   },
-  'pin-none': {
-    top: 'auto',
-    right: 'auto',
-    bottom: 'auto',
-    left: 'auto'
+  "pin-none": {
+    top: "auto",
+    right: "auto",
+    bottom: "auto",
+    left: "auto"
   },
   pin: {
     top: 0,
@@ -1591,381 +1717,510 @@ module.exports = StyleSheet.create({
     bottom: 0,
     left: 0
   },
-  'pin-y': {
+  "pin-y": {
     top: 0,
     bottom: 0
   },
-  'pin-x': {
+  "pin-x": {
     right: 0,
     left: 0
   },
-  'pin-t': {
+  "pin-t": {
     top: 0
   },
-  'pin-r': {
+  "pin-r": {
     right: 0
   },
-  'pin-b': {
+  "pin-b": {
     bottom: 0
   },
-  'pin-l': {
+  "pin-l": {
     left: 0
   },
-  'text-left': {
-    textAlign: 'left'
+  "text-left": {
+    textAlign: "left"
   },
-  'text-center': {
-    textAlign: 'center'
+  "text-center": {
+    textAlign: "center"
   },
-  'text-right': {
-    textAlign: 'right'
+  "text-right": {
+    textAlign: "right"
   },
-  'text-justify': {
-    textAlign: 'justify'
+  "text-justify": {
+    textAlign: "justify"
   },
-  'text-transparent': {
-    color: 'transparent'
+  "text-transparent": {
+    color: "transparent"
   },
-  'text-black': {
-    color: '#22292f'
+  "text-black": {
+    color: "#000"
   },
-  'text-grey-darkest': {
-    color: '#3d4852'
+  "text-white": {
+    color: "#fff"
   },
-  'text-grey-darker': {
-    color: '#606f7b'
+  "text-gray-100": {
+    color: "#f7fafc"
   },
-  'text-grey-dark': {
-    color: '#8795a1'
+  "text-gray-200": {
+    color: "#edf2f7"
   },
-  'text-grey': {
-    color: '#b8c2cc'
+  "text-gray-300": {
+    color: "#e2e8f0"
   },
-  'text-grey-light': {
-    color: '#dae1e7'
+  "text-gray-400": {
+    color: "#cbd5e0"
   },
-  'text-grey-lighter': {
-    color: '#f1f5f8'
+  "text-gray-500": {
+    color: "#a0aec0"
   },
-  'text-grey-lightest': {
-    color: '#f8fafc'
+  "text-gray-600": {
+    color: "#718096"
   },
-  'text-white': {
-    color: '#fff'
+  "text-gray-700": {
+    color: "#4a5568"
   },
-  'text-red-darkest': {
-    color: '#3b0d0c'
+  "text-gray-800": {
+    color: "#2d3748"
   },
-  'text-red-darker': {
-    color: '#621b18'
+  "text-gray-900": {
+    color: "#1a202c"
   },
-  'text-red-dark': {
-    color: '#cc1f1a'
+  "text-red-100": {
+    color: "#fff5f5"
   },
-  'text-red': {
-    color: '#e3342f'
+  "text-red-200": {
+    color: "#fed7d7"
   },
-  'text-red-light': {
-    color: '#ef5753'
+  "text-red-300": {
+    color: "#feb2b2"
   },
-  'text-red-lighter': {
-    color: '#f9acaa'
+  "text-red-400": {
+    color: "#fc8181"
   },
-  'text-red-lightest': {
-    color: '#fcebea'
+  "text-red-500": {
+    color: "#f56565"
   },
-  'text-orange-darkest': {
-    color: '#462a16'
+  "text-red-600": {
+    color: "#e53e3e"
   },
-  'text-orange-darker': {
-    color: '#613b1f'
+  "text-red-700": {
+    color: "#c53030"
   },
-  'text-orange-dark': {
-    color: '#de751f'
+  "text-red-800": {
+    color: "#9b2c2c"
   },
-  'text-orange': {
-    color: '#f6993f'
+  "text-red-900": {
+    color: "#742a2a"
   },
-  'text-orange-light': {
-    color: '#faad63'
+  "text-orange-100": {
+    color: "#fffaf0"
   },
-  'text-orange-lighter': {
-    color: '#fcd9b6'
+  "text-orange-200": {
+    color: "#feebc8"
   },
-  'text-orange-lightest': {
-    color: '#fff5eb'
+  "text-orange-300": {
+    color: "#fbd38d"
   },
-  'text-yellow-darkest': {
-    color: '#453411'
+  "text-orange-400": {
+    color: "#f6ad55"
   },
-  'text-yellow-darker': {
-    color: '#684f1d'
+  "text-orange-500": {
+    color: "#ed8936"
   },
-  'text-yellow-dark': {
-    color: '#f2d024'
+  "text-orange-600": {
+    color: "#dd6b20"
   },
-  'text-yellow': {
-    color: '#ffed4a'
+  "text-orange-700": {
+    color: "#c05621"
   },
-  'text-yellow-light': {
-    color: '#fff382'
+  "text-orange-800": {
+    color: "#9c4221"
   },
-  'text-yellow-lighter': {
-    color: '#fff9c2'
+  "text-orange-900": {
+    color: "#7b341e"
   },
-  'text-yellow-lightest': {
-    color: '#fcfbeb'
+  "text-yellow-100": {
+    color: "ivory"
   },
-  'text-green-darkest': {
-    color: '#0f2f21'
+  "text-yellow-200": {
+    color: "#fefcbf"
   },
-  'text-green-darker': {
-    color: '#1a4731'
+  "text-yellow-300": {
+    color: "#faf089"
   },
-  'text-green-dark': {
-    color: '#1f9d55'
+  "text-yellow-400": {
+    color: "#f6e05e"
   },
-  'text-green': {
-    color: '#38c172'
+  "text-yellow-500": {
+    color: "#ecc94b"
   },
-  'text-green-light': {
-    color: '#51d88a'
+  "text-yellow-600": {
+    color: "#d69e2e"
   },
-  'text-green-lighter': {
-    color: '#a2f5bf'
+  "text-yellow-700": {
+    color: "#b7791f"
   },
-  'text-green-lightest': {
-    color: '#e3fcec'
+  "text-yellow-800": {
+    color: "#975a16"
   },
-  'text-teal-darkest': {
-    color: '#0d3331'
+  "text-yellow-900": {
+    color: "#744210"
   },
-  'text-teal-darker': {
-    color: '#20504f'
+  "text-green-100": {
+    color: "#f0fff4"
   },
-  'text-teal-dark': {
-    color: '#38a89d'
+  "text-green-200": {
+    color: "#c6f6d5"
   },
-  'text-teal': {
-    color: '#4dc0b5'
+  "text-green-300": {
+    color: "#9ae6b4"
   },
-  'text-teal-light': {
-    color: '#64d5ca'
+  "text-green-400": {
+    color: "#68d391"
   },
-  'text-teal-lighter': {
-    color: '#a0f0ed'
+  "text-green-500": {
+    color: "#48bb78"
   },
-  'text-teal-lightest': {
-    color: '#e8fffe'
+  "text-green-600": {
+    color: "#38a169"
   },
-  'text-blue-darkest': {
-    color: '#12283a'
+  "text-green-700": {
+    color: "#2f855a"
   },
-  'text-blue-darker': {
-    color: '#1c3d5a'
+  "text-green-800": {
+    color: "#276749"
   },
-  'text-blue-dark': {
-    color: '#2779bd'
+  "text-green-900": {
+    color: "#22543d"
   },
-  'text-blue': {
-    color: '#3490dc'
+  "text-teal-100": {
+    color: "#e6fffa"
   },
-  'text-blue-light': {
-    color: '#6cb2eb'
+  "text-teal-200": {
+    color: "#b2f5ea"
   },
-  'text-blue-lighter': {
-    color: '#bcdefa'
+  "text-teal-300": {
+    color: "#81e6d9"
   },
-  'text-blue-lightest': {
-    color: '#eff8ff'
+  "text-teal-400": {
+    color: "#4fd1c5"
   },
-  'text-indigo-darkest': {
-    color: '#191e38'
+  "text-teal-500": {
+    color: "#38b2ac"
   },
-  'text-indigo-darker': {
-    color: '#2f365f'
+  "text-teal-600": {
+    color: "#319795"
   },
-  'text-indigo-dark': {
-    color: '#5661b3'
+  "text-teal-700": {
+    color: "#2c7a7b"
   },
-  'text-indigo': {
-    color: '#6574cd'
+  "text-teal-800": {
+    color: "#285e61"
   },
-  'text-indigo-light': {
-    color: '#7886d7'
+  "text-teal-900": {
+    color: "#234e52"
   },
-  'text-indigo-lighter': {
-    color: '#b2b7ff'
+  "text-blue-100": {
+    color: "#ebf8ff"
   },
-  'text-indigo-lightest': {
-    color: '#e6e8ff'
+  "text-blue-200": {
+    color: "#bee3f8"
   },
-  'text-purple-darkest': {
-    color: '#21183c'
+  "text-blue-300": {
+    color: "#90cdf4"
   },
-  'text-purple-darker': {
-    color: '#382b5f'
+  "text-blue-400": {
+    color: "#63b3ed"
   },
-  'text-purple-dark': {
-    color: '#794acf'
+  "text-blue-500": {
+    color: "#4299e1"
   },
-  'text-purple': {
-    color: '#9561e2'
+  "text-blue-600": {
+    color: "#3182ce"
   },
-  'text-purple-light': {
-    color: '#a779e9'
+  "text-blue-700": {
+    color: "#2b6cb0"
   },
-  'text-purple-lighter': {
-    color: '#d6bbfc'
+  "text-blue-800": {
+    color: "#2c5282"
   },
-  'text-purple-lightest': {
-    color: '#f3ebff'
+  "text-blue-900": {
+    color: "#2a4365"
   },
-  'text-pink-darkest': {
-    color: '#451225'
+  "text-indigo-100": {
+    color: "#ebf4ff"
   },
-  'text-pink-darker': {
-    color: '#6f213f'
+  "text-indigo-200": {
+    color: "#c3dafe"
   },
-  'text-pink-dark': {
-    color: '#eb5286'
+  "text-indigo-300": {
+    color: "#a3bffa"
   },
-  'text-pink': {
-    color: '#f66d9b'
+  "text-indigo-400": {
+    color: "#7f9cf5"
   },
-  'text-pink-light': {
-    color: '#fa7ea8'
+  "text-indigo-500": {
+    color: "#667eea"
   },
-  'text-pink-lighter': {
-    color: '#ffbbca'
+  "text-indigo-600": {
+    color: "#5a67d8"
   },
-  'text-pink-lightest': {
-    color: '#ffebef'
+  "text-indigo-700": {
+    color: "#4c51bf"
   },
-  'text-xs': {
+  "text-indigo-800": {
+    color: "#434190"
+  },
+  "text-indigo-900": {
+    color: "#3c366b"
+  },
+  "text-purple-100": {
+    color: "#faf5ff"
+  },
+  "text-purple-200": {
+    color: "#e9d8fd"
+  },
+  "text-purple-300": {
+    color: "#d6bcfa"
+  },
+  "text-purple-400": {
+    color: "#b794f4"
+  },
+  "text-purple-500": {
+    color: "#9f7aea"
+  },
+  "text-purple-600": {
+    color: "#805ad5"
+  },
+  "text-purple-700": {
+    color: "#6b46c1"
+  },
+  "text-purple-800": {
+    color: "#553c9a"
+  },
+  "text-purple-900": {
+    color: "#44337a"
+  },
+  "text-pink-100": {
+    color: "#fff5f7"
+  },
+  "text-pink-200": {
+    color: "#fed7e2"
+  },
+  "text-pink-300": {
+    color: "#fbb6ce"
+  },
+  "text-pink-400": {
+    color: "#f687b3"
+  },
+  "text-pink-500": {
+    color: "#ed64a6"
+  },
+  "text-pink-600": {
+    color: "#d53f8c"
+  },
+  "text-pink-700": {
+    color: "#b83280"
+  },
+  "text-pink-800": {
+    color: "#97266d"
+  },
+  "text-pink-900": {
+    color: "#702459"
+  },
+  "text-xs": {
     fontSize: 12
   },
-  'text-sm': {
+  "text-sm": {
     fontSize: 14
   },
-  'text-base': {
+  "text-base": {
     fontSize: 16
   },
-  'text-lg': {
+  "text-lg": {
     fontSize: 18
   },
-  'text-xl': {
+  "text-xl": {
     fontSize: 20
   },
-  'text-2xl': {
+  "text-2xl": {
     fontSize: 24
   },
-  'text-3xl': {
+  "text-3xl": {
     fontSize: 30
   },
-  'text-4xl': {
+  "text-4xl": {
     fontSize: 36
   },
-  'text-5xl': {
+  "text-5xl": {
     fontSize: 48
   },
   italic: {
-    fontStyle: 'italic'
+    fontStyle: "italic"
   },
   roman: {
-    fontStyle: 'normal'
+    fontStyle: "normal"
   },
-  'tracking-tight': {
+  "tracking-tight": {
     letterSpacing: -0.8
   },
-  'tracking-normal': {
+  "tracking-normal": {
     letterSpacing: 0
   },
-  'tracking-wide': {
+  "tracking-wide": {
     letterSpacing: 0.8
   },
-  'w-1': {
+  "w-0": {
+    width: 0
+  },
+  "w-1": {
     width: 4
   },
-  'w-2': {
+  "w-2": {
     width: 8
   },
-  'w-3': {
+  "w-3": {
     width: 12
   },
-  'w-4': {
+  "w-4": {
     width: 16
   },
-  'w-6': {
+  "w-6": {
     width: 24
   },
-  'w-8': {
+  "w-8": {
     width: 32
   },
-  'w-10': {
+  "w-10": {
     width: 40
   },
-  'w-12': {
+  "w-12": {
     width: 48
   },
-  'w-16': {
+  "w-16": {
     width: 64
   },
-  'w-24': {
+  "w-24": {
     width: 96
   },
-  'w-32': {
+  "w-32": {
     width: 128
   },
-  'w-48': {
+  "w-48": {
     width: 192
   },
-  'w-64': {
+  "w-64": {
     width: 256
   },
-  'w-auto': {
-    width: 'auto'
+  "w-auto": {
+    width: "auto"
   },
-  'w-px': {
+  "w-px": {
     width: 1
   },
-  'w-1/2': {
-    width: '50%'
+  "w-1/2": {
+    width: "50%"
   },
-  'w-1/3': {
-    width: '33.33333%'
+  "w-1/3": {
+    width: "33.333333%"
   },
-  'w-2/3': {
-    width: '66.66667%'
+  "w-2/3": {
+    width: "66.666667%"
   },
-  'w-1/4': {
-    width: '25%'
+  "w-1/4": {
+    width: "25%"
   },
-  'w-3/4': {
-    width: '75%'
+  "w-2/4": {
+    width: "50%"
   },
-  'w-1/5': {
-    width: '20%'
+  "w-3/4": {
+    width: "75%"
   },
-  'w-2/5': {
-    width: '40%'
+  "w-1/5": {
+    width: "20%"
   },
-  'w-3/5': {
-    width: '60%'
+  "w-2/5": {
+    width: "40%"
   },
-  'w-4/5': {
-    width: '80%'
+  "w-3/5": {
+    width: "60%"
   },
-  'w-1/6': {
-    width: '16.66667%'
+  "w-4/5": {
+    width: "80%"
   },
-  'w-5/6': {
-    width: '83.33333%'
+  "w-1/6": {
+    width: "16.666667%"
   },
-  'w-full': {
-    width: '100%'
+  "w-2/6": {
+    width: "33.333333%"
   },
-  'w-screen': {
-    width: '100vw'
+  "w-3/6": {
+    width: "50%"
+  },
+  "w-4/6": {
+    width: "66.666667%"
+  },
+  "w-5/6": {
+    width: "83.333333%"
+  },
+  "w-1/12": {
+    width: "8.333333%"
+  },
+  "w-2/12": {
+    width: "16.666667%"
+  },
+  "w-3/12": {
+    width: "25%"
+  },
+  "w-4/12": {
+    width: "33.333333%"
+  },
+  "w-5/12": {
+    width: "41.666667%"
+  },
+  "w-6/12": {
+    width: "50%"
+  },
+  "w-7/12": {
+    width: "58.333333%"
+  },
+  "w-8/12": {
+    width: "66.666667%"
+  },
+  "w-9/12": {
+    width: "75%"
+  },
+  "w-10/12": {
+    width: "83.333333%"
+  },
+  "w-11/12": {
+    width: "91.666667%"
+  },
+  "w-full": {
+    width: "100%"
+  },
+  "w-screen": {
+    width: "100vw"
+  },
+  "z-0": {
+    zIndex: 0
+  },
+  "z-10": {
+    zIndex: 10
+  },
+  "z-20": {
+    zIndex: 20
+  },
+  "z-30": {
+    zIndex: 30
+  },
+  "z-40": {
+    zIndex: 40
+  },
+  "z-50": {
+    zIndex: 50
+  },
+  "z-auto": {
+    zIndex: "auto"
   }
-})
+});
