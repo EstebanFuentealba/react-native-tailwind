@@ -2219,8 +2219,5 @@ module.exports = StyleSheet.create({
   },
   "z-50": {
     zIndex: 50
-  },
-  "z-auto": {
-    zIndex: "auto"
   }
 });
