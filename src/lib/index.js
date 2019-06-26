@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   View as RnView,
   ScrollView as RnScrollView,
@@ -7,26 +7,37 @@ import {
   TextInput as RnTextInput,
   TouchableOpacity as RnTouchableOpacity,
   StyleSheet
-} from 'react-native'
-import tw from './tailwind'
+} from "react-native";
+import tw from "./tailwind";
 
 const buildComponent = Component => ({ className, style, ...rest }) => {
-  const props = { ...rest, style: [] }
+  const props = { ...rest, style: [] };
   if (className) {
-    props.style = className.split(' ').map(c => tw[c])
+    props.style = className
+      .trim()
+      .split(" ")
+      .map(c => tw[c]);
   }
   if (style) {
-    const inline = StyleSheet.create({ style })
-    props.style.push(inline.style)
+    const inline = StyleSheet.create({ style });
+    props.style.push(inline.style);
   }
-  return <Component {...props} />
-}
+  return <Component {...props} />;
+};
 
-export const View = buildComponent(RnView)
-export const ScrollView = buildComponent(RnScrollView)
-export const Text = buildComponent(RnText)
-export const Image = buildComponent(RnImage)
-export const TextInput = buildComponent(RnTextInput)
-export const TouchableOpacity = buildComponent(RnTouchableOpacity)
+export const View = buildComponent(RnView);
+export const ScrollView = buildComponent(RnScrollView);
+export const Text = buildComponent(RnText);
+export const Image = buildComponent(RnImage);
+export const TextInput = buildComponent(RnTextInput);
+export const TouchableOpacity = buildComponent(RnTouchableOpacity);
 
-export default { View, ScrollView, Text, Image, TextInput, TouchableOpacity }
+export default {
+  View,
+  ScrollView,
+  Text,
+  Image,
+  TextInput,
+  TouchableOpacity,
+  buildComponent
+};
